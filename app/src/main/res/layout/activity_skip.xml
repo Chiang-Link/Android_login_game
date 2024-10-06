@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:orientation="vertical"
+    tools:context=".skipActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="36dp"
+        android:text="时间：0"
+        android:textColor="#000000"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x00"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/b"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/c"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/d"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x00"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/e"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/f"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/g"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x00"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/h"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/i"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/j"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:visibility="invisible"
+            >
+
+        </ImageButton>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pt_btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="#1F3708"
+        android:onClick="restart"
+        android:text="重新开始"
+        android:textSize="18dp">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/pt_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tmrotxy4">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="示例图片"
+        android:textColor="@color/black"
+        android:textSize="25dp">
+
+    </TextView>
+</LinearLayout>
